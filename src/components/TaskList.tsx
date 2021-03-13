@@ -21,10 +21,7 @@ export function TaskList() {
       return false;
     }
 
-    const min = 1;
-    const max = 100;
-    const randNumber = min + Math.random() * (max - min);
-    const id = Math.round(randNumber);
+    const id = Math.floor(Math.random() * Date.now());
 
     const newTask = {
       id: id,
